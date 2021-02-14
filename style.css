@@ -4,14 +4,14 @@ body {
   overflow-x: hidden;
 }
 /* Navbar */
-.main {
+/* .main {
   padding: 0px;
   min-width: 100vw;
-}
-.nav-row {
+} */
+/* .nav-row {
   margin-right: 0;
   margin-left: 0;
-}
+} */
 .custom-nav {
   position: absolute;
   top: 0;
@@ -357,9 +357,8 @@ h3 {
 .info p {
   font-size: 0.9rem;
 }
-
 /* MEDIA QUERIES */
-@media only screen and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .custom-nav {
     padding: 10px 50px 10px 50px;
   }
@@ -369,12 +368,13 @@ h3 {
   .custom-navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
   }
-}
-/* tablets */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0;
+  }
+  .check-in-out {
+    width: 75vw;
+    height: 9vh;
   }
   .calender-date {
     font-size: 13px;
@@ -387,10 +387,10 @@ h3 {
     font-size: 10px;
   }
   .custom-carousel-indicators {
-    bottom: 15%;
+    bottom: 22%;
   }
   .custom-caption {
-    bottom: 15%;
+    bottom: 22%;
   }
   .div h5 {
     font-size: 16px;
@@ -401,9 +401,30 @@ h3 {
   .btn.btn-danger {
     font-size: 14px;
   }
+  .amenities {
+    width: 75vw !important;
+  }
+  .reviews {
+    width: 90vw !important;
+  }
 }
 /* phones */
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 767px) {
+  .main {
+    min-width: 100vw !important;
+    overflow-x: hidden !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-left: 0px !important;
+  }
+  .custom-nav {
+    padding: 0px 10px 0px 10px;
+  }
+  .attractions.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
   .calender-date {
     font-size: 13px;
   }
@@ -417,14 +438,33 @@ h3 {
   }
   .check-in-out {
     width: 90vw;
-    height: 12vh;
+    height: 18vh;
     bottom: 5%;
+    padding: 25px;
   }
   .calender-div {
-    line-height: 1;
+    line-height: 2;
+    width: 50%;
+  }
+  .calender-div.right {
+    text-align: right;
+  }
+  .caret-down-text {
+    margin-top: -15px;
+  }
+  .calender-div {
+    line-height: 2;
+  }
+  .caret-down-text {
+    line-height: 3;
   }
   .green-button {
-    margin: auto 0;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -20px;
+  }
+  .welcome {
+    padding: 20px;
   }
   .custom-carousel-indicators {
     bottom: 21%;
@@ -432,12 +472,71 @@ h3 {
   .custom-caption {
     bottom: 21%;
   }
+  .div {
+    width: 100%;
+  }
   .div h5 {
     font-size: 14px;
-    white-space: nowrap;
+    width: 100%;
   }
   .div p {
     font-size: 13px;
+    width: 100%;
+  }
+  .guest-room {
+    height: 30vh;
+  }
+  .guest-room p {
+    bottom: 8px;
+  }
+  .amenities {
+    width: 80% !important;
+  }
+  .reviews {
+    width: 90% !important;
+  }
+  .reviews-head {
+    font-size: 1rem;
+    margin-top: -19px;
+    padding: 5px 10px;
+    width: 75%;
+  }
+  .attractions {
+    height: 55vh;
+  }
+  .attractions .attractions-text {
+    width: 75% !important;
+  }
+  .location {
+    width: 85vw;
+    height: 55vh;
+  }
+  .location .google-map {
+    height: 30vh;
+  }
+  .location h4 {
+    margin-top: 30px;
+  }
+  .location button {
+    margin-top: 0rem !important;
+  }
+  .location span {
+    display: block;
+  }
+  .view-more-gallery {
+    min-height: 275px;
+  }
+  .connect {
+    width: 80vw;
+    padding: 1rem;
+  }
+  .footer .btn-light {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .info {
+    flex-direction: column;
+    padding-top: 10px;
   }
   .btn.btn-danger {
     font-size: 12px;
@@ -492,5 +591,13 @@ h3 {
     font-size: 0.7rem;
     padding-right: 30px;
     padding-left: 30px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar-collapse.collapse.show {
+    background: white;
+  }
+  .navbar-collapse.collapse.show ul li a {
+    color: black !important;
   }
 }
