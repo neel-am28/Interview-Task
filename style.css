@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -286,6 +290,10 @@ h3 {
   margin: 0;
 }
 /* Gallery */
+.gallery {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .container-gallery {
   width: fit-content;
   margin: 0 auto;
@@ -440,7 +448,8 @@ h3 {
     width: 90vw;
     height: 18vh;
     bottom: 5%;
-    padding: 25px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
   }
   .calender-div {
     line-height: 2;
@@ -450,7 +459,8 @@ h3 {
     text-align: right;
   }
   .caret-down-text {
-    margin-top: -15px;
+    margin-top: -2px;
+    margin-right: 25px;
   }
   .calender-div {
     line-height: 2;
@@ -462,6 +472,11 @@ h3 {
     margin: 0 auto;
     text-align: center;
     margin-top: -20px;
+    width: 5rem;
+    font-size: 0.8rem;
+    margin-right: 0;
+    display: block;
+    margin-top: -4px;
   }
   .welcome {
     padding: 20px;
@@ -509,13 +524,21 @@ h3 {
   }
   .location {
     width: 85vw;
-    height: 55vh;
+    height: 62vh;
+  }
+  .location p {
+    margin-top: 0px;
+    text-align: center;
+    width: 100px;
   }
   .location .google-map {
     height: 30vh;
   }
   .location h4 {
-    margin-top: 30px;
+    margin-top: 10px;
+  }
+  .location .location-text {
+    margin-top: -10px;
   }
   .location button {
     margin-top: 0rem !important;
@@ -524,23 +547,27 @@ h3 {
     display: block;
   }
   .view-more-gallery {
-    min-height: 275px;
+    min-height: 230px;
+  }
+  .view-more-gallery p {
+    margin-top: 10px !important;
   }
   .connect {
-    width: 80vw;
+    width: 90vw;
     padding: 1rem;
   }
   .footer .btn-light {
     margin-bottom: 20px;
     margin-top: 20px;
   }
-  .info {
+  .info .container-fluid {
     flex-direction: column;
     padding-top: 10px;
   }
   .btn.btn-danger {
     font-size: 12px;
     padding: 5px;
+    width: 8rem !important;
   }
   .guest-room h2 {
     font-size: 20px;
@@ -550,6 +577,7 @@ h3 {
   }
   .amenities i.fa {
     margin-top: 15px;
+    font-size: 4rem;
   }
   .reviews-head {
     white-space: nowrap;
@@ -561,6 +589,22 @@ h3 {
   .reviews span,
   .attractions p {
     font-size: 0.9rem;
+  }
+  .reviews p {
+    line-height: 1.2;
+  }
+  .reviews-carousel .carousel-item {
+    padding: 50px;
+  }
+  .reviews i.fa.fa-quote-left,
+  .reviews i.fa.fa-quote-right {
+    font-size: 1.5rem;
+  }
+  .reviews i.fa.fa-quote-left {
+    left: 2%;
+  }
+  .reviews i.fa.fa-quote-right {
+    right: 2%;
   }
   .attractions p {
     margin-top: 25px;
