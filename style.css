@@ -492,6 +492,7 @@ h3 {
   }
   .custom-nav {
     padding: 0px 10px 0px 10px;
+    z-index: 12;
   }
   .attractions.row {
     margin-left: 0px !important;
@@ -545,6 +546,12 @@ h3 {
   .welcome {
     padding: 20px;
   }
+  .welcome h4 {
+    font-size: 1.2rem;
+  }
+  .welcome h3 {
+    font-size: 1.5rem;
+  }
   .custom-carousel-indicators {
     bottom: 21%;
   }
@@ -555,8 +562,10 @@ h3 {
     width: 100%;
   }
   .div h5 {
-    font-size: 14px;
+    font-size: 9px;
     width: 100%;
+    text-align: left !important;
+    font-weight: bold;
   }
   .div p {
     font-size: 13px;
@@ -634,14 +643,22 @@ h3 {
     width: 8rem !important;
   }
   .guest-room h2 {
-    font-size: 20px;
+    font-size: 16px;
+    margin-left: 6% !important;
   }
   .guest-room p {
-    font-size: 16px;
+    font-size: 12px;
+    right: -6%;
   }
   .amenities i.fa {
     margin-top: 15px;
     font-size: 4rem;
+  }
+  .amenities h4 {
+    font-size: 1.5rem;
+  }
+  .amenities h3 {
+    font-size: 1.2rem;
   }
   .reviews-head {
     white-space: nowrap;
@@ -681,8 +698,9 @@ h3 {
     margin-top: -30px !important;
     margin-bottom: 20px;
   }
-  .attractions h4 {
-    font-size: 2rem;
+  .attractions h4,
+  .location h4 {
+    font-size: 1.5rem;
   }
   .location-text {
     min-width: 100%;
@@ -700,10 +718,41 @@ h3 {
     padding-right: 30px;
     padding-left: 30px;
   }
+  /* Navbar */
+  .nav-item a {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  .custom-nav {
+    padding: 0px 10px 0px 0px;
+    z-index: 12;
+  }
+  .navbar-light .navbar-brand {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+  .navbar-light .navbar-toggler {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+  .nav-item.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+  .nav-item.active #navbarNav {
+    display: none;
+  }
+  .nav-link::after {
+    display: none;
+  }
+  .nav-item.active .nav-link::after {
+    display: none;
+  }
 }
 @media only screen and (max-width: 992px) {
   .navbar-collapse.collapse.show {
     background: white;
+    height: 100vh;
   }
   .navbar-collapse.collapse.show ul li a {
     color: black !important;
