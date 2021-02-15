@@ -354,10 +354,7 @@ h3 {
   margin: 0;
 }
 /* Gallery */
-.gallery {
-  padding-left: 30px;
-  padding-right: 30px;
-}
+
 .container-gallery {
   width: fit-content;
   margin: 0 auto;
@@ -482,6 +479,10 @@ h3 {
 }
 /* phones */
 @media screen and (max-width: 767px) {
+  .gallery {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .main {
     min-width: 100vw !important;
     overflow-x: hidden !important;
