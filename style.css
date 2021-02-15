@@ -146,7 +146,7 @@ h3 {
   bottom: 15px;
 }
 .guest-room p {
-  bottom: 5px;
+  bottom: 15px;
   right: 15px;
 }
 .guest-room .layer-top {
@@ -159,6 +159,70 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.guest-room .line-1 {
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  width: 1px;
+  height: 98%;
+  background: #fbf3aa;
+}
+.guest-room .line-2 {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  width: 1px;
+  height: 98%;
+  background: #fbf3aa;
+}
+.guest-room .line-3 {
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  height: 1px;
+  width: 98%;
+  background: #fbf3aa;
+}
+.guest-room .line-4 {
+  position: absolute;
+  bottom: 3%;
+  left: 1%;
+  height: 1px;
+  width: 98%;
+  background: #fbf3aa;
+}
+.guest-room .line-5 {
+  position: absolute;
+  top: 4%;
+  left: 3%;
+  width: 1px;
+  height: 92%;
+  background: #fbf3aa;
+}
+.guest-room .line-6 {
+  position: absolute;
+  top: 4%;
+  right: 3%;
+  width: 1px;
+  height: 92%;
+  background: #fbf3aa;
+}
+.guest-room .line-7 {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  height: 1px;
+  width: 94%;
+  background: #fbf3aa;
+}
+.guest-room .line-8 {
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  height: 1px;
+  width: 94%;
+  background: #fbf3aa;
 }
 /* Amenity */
 .amenity-text {
